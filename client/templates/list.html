@@ -1,0 +1,34 @@
+<div class="panel panel-default" ng-init="getEmployees()">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:blueviolet;" 
+class="glyphicon glyphicon-list"> </span> Employees List</p>
+	</div>
+	<div class="panel-body">
+		<table class="table table-striped">
+			<thead>
+			<tr>
+			  <th style= "background-color:green">Name</th>
+			  <th style= "background-color:green	">Department</th>
+			  <th style= "background-color:green	">Position</th>
+			  <th style= "background-color:green	">Age</th>
+			  <th style= "background-color:green	">Remarks</th>
+			  <th style= "background-color:green">Actions</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr ng-repeat="employee in employees">
+			  <td>{{ employee.name }}</td>
+			  <td>{{ employee.dept }}</td>
+			  <td>{{ employee.status}}</td>
+			  <td>{{employee.age}}</td>
+			  <td>{{employee.remarks}}</td>
+			  <td> 
+			    <a href="#/employees/{{employee._id}}/show" class="btn btn-info"> Show  </a>
+			    <a href="#/employees/{{employee._id}}/edit" class="btn btn-success"><span class="glyphicon glyphicon-edit"> </span> Edit  </a>
+			  	<a ng-click="deleteEmployee(employee._id)" class="btn btn-danger"><span class="glyphicon glyphicon-trash"> </span> Delete </a>
+			  </td>
+			</tr>
+			</tbody>
+		</table>		
+    <div>
+<div>
