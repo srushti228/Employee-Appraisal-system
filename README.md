@@ -1,9 +1,9 @@
 # Employee Appraisal  System
 Technology used:
-1-AngularJS,HTML,CSS
-2-Express 
-3-Node js  
-4- database - MongoDB
+1.AngularJS,HTML,CSS
+2.Express 
+3.Node js  
+4.database - MongoDB
 
 Performs CRUD operations.
 
